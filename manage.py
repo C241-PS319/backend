@@ -3,10 +3,9 @@
 import os
 import sys
 
-
 def main():
     """Run administrative tasks."""
-    os.environ.setdefault("DJANGO_SETTINGS_MODULE", "patera.settings")
+    os.environ.setdefault("DJANGO_SETTINGS_MODULE", "app.nani.settings")
     try:
         from django.core.management import execute_from_command_line
     except ImportError as exc:
@@ -15,8 +14,9 @@ def main():
             "available on your PYTHONPATH environment variable? Did you "
             "forget to activate a virtual environment?"
         ) from exc
+    if (sys.argv[1] == 'runserver'): # just run once when execute command 'manage.py runserver' but not other commands
+        execute_from_command_line([sys.argv[0], 'test']) # run all the test first
     execute_from_command_line(sys.argv)
-
 
 if __name__ == "__main__":
     main()
