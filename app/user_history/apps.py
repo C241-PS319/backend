@@ -3,4 +3,4 @@ from django.apps import AppConfig
 
 class UserHistoryConfig(AppConfig):
     default_auto_field = "django.db.models.BigAutoField"
-    name = "user_history"
+    name = "app.user_history"

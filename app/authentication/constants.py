@@ -1,0 +1,1 @@
+DEFAULT_USER_PICTURE="https://firebasestorage.googleapis.com/v0/b/nani-agritech.appspot.com/o/app%2Fauthentication%2Fdefault-user-photo.jpeg?alt=media&token=4f8585ca-908a-4d5f-941d-6c1965d18a3c"
