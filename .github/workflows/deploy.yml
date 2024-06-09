@@ -1,0 +1,147 @@
+name: Deploy Django to GCP with Docker - Production
+
+on:
+  push:
+    branches:
+      - master
+
+env:
+  DATABASE_NAME: ${{ vars.DATABASE_NAME_PRODUCTION }}
+  DATABASE_USER: ${{ vars.DATABASE_USER_PRODUCTION }}
+  DATABASE_PASSWORD: ${{ vars.DATABASE_PASSWORD_PRODUCTION }}
+  DATABASE_HOST: ${{ vars.DATABASE_HOST_PRODUCTION }}
+  DATABASE_PORT: ${{ vars.DATABASE_PORT_PRODUCTION }}
+  SECRET_KEY: ${{ vars.SECRET_KEY }}
+  ENVIRONMENT: ${{ vars.ENVIRONMENT }}
+  FIREBASE_SERVICE_ACCOUNT: ${{ vars.FIREBASE_SERVICE_ACCOUNT }}
+  WEATHER_API_KEY: ${{ vars.WEATHER_API_KEY }}
+  EMAIL_HOST: ${{secrets.EMAIL_HOST}}
+  EMAIL_HOST_USER: ${{secrets.EMAIL_HOST_USER}}
+  EMAIL_HOST_PASSWORD: ${{secrets.EMAIL_HOST_PASSWORD}}
+  DEFAULT_FROM_EMAIL: ${{secrets.DEFAULT_FROM_EMAIL}}
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+  test:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v3
+        with:
+          python-version: 3.9
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run Django tests
+        run: |
+          python manage.py test --keepdb
+        continue-on-error: true
+
+      - name: Remove Django test database
+        if: ${{ failure() }}
+        run: |
+          python manage.py flush --no-input
+
+      - name: Run Django tests if error after flush
+        if: ${{ failure() }}
+        run: |
+          python manage.py test --keepdb
+
+  publish:
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Login to Docker Hub
+        uses: docker/login-action@v1
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+
+      - name: Set up Docker
+        uses: docker/setup-buildx-action@v2
+
+      - name: Build Docker image
+        run: |
+          docker build \
+            -t ${{ secrets.DOCKER_IMAGE_NAME }}:latest \
+            --build-arg DATABASE_NAME=$DATABASE_NAME \
+            --build-arg DATABASE_USER=$DATABASE_USER \
+            --build-arg DATABASE_PASSWORD=$DATABASE_PASSWORD \
+            --build-arg DATABASE_HOST=$DATABASE_HOST \
+            --build-arg DATABASE_PORT=$DATABASE_PORT \
+            --build-arg SECRET_KEY=$SECRET_KEY \
+            --build-arg ENVIRONMENT=$ENVIRONMENT \
+            --build-arg FIREBASE_SERVICE_ACCOUNT=$FIREBASE_SERVICE_ACCOUNT \
+            --build-arg WEATHER_API_KEY=$WEATHER_API_KEY \
+            --build-arg EMAIL_HOST=$EMAIL_HOST \
+            --build-arg EMAIL_HOST_USER=$EMAIL_HOST_USER \
+            --build-arg EMAIL_HOST_PASSWORD=$EMAIL_HOST_PASSWORD \
+            --build-arg DEFAULT_FROM_EMAIL=$DEFAULT_FROM_EMAIL \
+            . --no-cache
+
+      - name: Tag Docker image
+        run: docker tag ${{ secrets.DOCKER_IMAGE_NAME }}:latest ${{ secrets.DOCKERHUB_USERNAME }}/${{ secrets.DOCKER_IMAGE_NAME }}:latest
+
+      - name: Push Docker image to Docker Hub
+        run: docker push ${{ secrets.DOCKERHUB_USERNAME }}/${{ secrets.DOCKER_IMAGE_NAME }}:latest
+
+  deploy:
+    needs: publish
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up gcloud CLI
+        uses: google-github-actions/setup-gcloud@v0.3.0
+        with:
+          project_id: ${{ secrets.GCE_PROJECT_ID }}
+          service_account_key: ${{ secrets.GCE_SA_KEY }}
+          export_default_credentials: true
+
+      - name: Access gcloud CLI
+        run: |
+          gcloud auth configure-docker
+
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Build docker-compose.yml
+        run: |
+          sed "s/DOCKER_IMAGE_NAME_STAGING/${{secrets.DOCKERHUB_USERNAME}}\/${{secrets.DOCKER_IMAGE_NAME_STAGING}}/g" docker-compose-template.yml > docker-compose.yml
+          sed -i "s/DOCKER_IMAGE_NAME/${{secrets.DOCKERHUB_USERNAME}}\/${{secrets.DOCKER_IMAGE_NAME}}/g" docker-compose.yml
+          sed -i "s/DOCKER_CONTAINER_NAME_STAGING/${{secrets.DOCKER_CONTAINER_NAME_STAGING}}/g" docker-compose.yml
+          sed -i "s/DOCKER_CONTAINER_NAME/${{secrets.DOCKER_CONTAINER_NAME}}/g" docker-compose.yml
+
+      - name: scp into GCP instance
+        uses: appleboy/scp-action@master
+        with:
+          host: ${{ secrets.GCE_INSTANCE_IP }}
+          username: ${{ secrets.GCE_SSH_USERNAME }}
+          key: ${{ secrets.GCE_SSH_PRIVATE_KEY }}
+          source: "docker-compose.yml"
+          target: "/home/${{ secrets.GCE_SSH_USERNAME }}/"
+
+      - name: SSH into GCP instance and deploy Django
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.GCE_INSTANCE_IP }}
+          username: ${{ secrets.GCE_SSH_USERNAME }}
+          key: ${{ secrets.GCE_SSH_PRIVATE_KEY }}
+          script: |
+            docker compose -f /home/${{ secrets.GCE_SSH_USERNAME }}/docker-compose.yml --profile production down
+            docker compose -f /home/${{ secrets.GCE_SSH_USERNAME }}/docker-compose.yml --profile production up --pull always -d
+
+            docker image prune -f -a
