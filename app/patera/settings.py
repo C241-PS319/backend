@@ -29,8 +29,8 @@ CORS_ALLOW_HEADERS = [
     'authorization',
 ]
 CSRF_TRUSTED_ORIGINS = [
-    'http://*.patera.com',
-    'https://*.patera.com',
+    'http://34.101.196.177',
+    'https://34.101.196.177',
     'https://*.127.0.0.1',
 ]
 CSRF_COOKIE_SECURE = True
