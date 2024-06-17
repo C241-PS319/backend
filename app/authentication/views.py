@@ -7,7 +7,7 @@ from rest_framework import status
 from django.contrib.auth.hashers import check_password
 from django.core.validators import EmailValidator
 from config.response import SuccessResponse, FailedResponse
-from app.authentication.models import User, Otp
+from app.authentication.models import User
 from app.authentication.serializers import (
     RegisterUserSerializer,
     LoginSerializer,
