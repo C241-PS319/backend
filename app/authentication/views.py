@@ -20,11 +20,6 @@ class RegisterAPIView(APIView):
     permission_classes = [AllowAny]
     def post(self, request):
         email = request.data['email']
-        password = request.data['password']
-        password_confirm = request.data['password_confirm']
-
-        if (password != password_confirm):
-            return FailedResponse('password must be same as confirm password', None)
 
         serializer = RegisterUserSerializer(data=request.data)
         if serializer.is_valid():
