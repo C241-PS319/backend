@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  staging:
+    profiles: [staging]
+    image: DOCKER_IMAGE_NAME:latest
+    container_name: DOCKER_CONTAINER_NAME
+    restart: unless-stopped
+    volumes:
+    ports:
+      - "8000:8000"
+      - "80:8000"
+      - "443:8000"
+      - "2525:2525"
+      - "587:587"
+    environment:
+      - DJANGO_SETTINGS_MODULE=app.patera.settings
