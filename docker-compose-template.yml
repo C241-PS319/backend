@@ -6,7 +6,6 @@ services:
     image: DOCKER_IMAGE_NAME:latest
     container_name: DOCKER_CONTAINER_NAME
     restart: unless-stopped
-    volumes:
     ports:
       - "8000:8000"
       - "80:8000"
