@@ -15,10 +15,6 @@ env:
   ENVIRONMENT: ${{ vars.ENVIRONMENT }}
   FIREBASE_SERVICE_ACCOUNT: ${{ vars.FIREBASE_SERVICE_ACCOUNT }}
   WEATHER_API_KEY: ${{ vars.WEATHER_API_KEY }}
-  EMAIL_HOST: ${{secrets.EMAIL_HOST}}
-  EMAIL_HOST_USER: ${{secrets.EMAIL_HOST_USER}}
-  EMAIL_HOST_PASSWORD: ${{secrets.EMAIL_HOST_PASSWORD}}
-  DEFAULT_FROM_EMAIL: ${{secrets.DEFAULT_FROM_EMAIL}}
 
 jobs:
   build:
@@ -88,10 +84,6 @@ jobs:
             --build-arg ENVIRONMENT=$ENVIRONMENT \
             --build-arg FIREBASE_SERVICE_ACCOUNT=$FIREBASE_SERVICE_ACCOUNT \
             --build-arg WEATHER_API_KEY=$WEATHER_API_KEY \
-            --build-arg EMAIL_HOST=$EMAIL_HOST \
-            --build-arg EMAIL_HOST_USER=$EMAIL_HOST_USER \
-            --build-arg EMAIL_HOST_PASSWORD=$EMAIL_HOST_PASSWORD \
-            --build-arg DEFAULT_FROM_EMAIL=$DEFAULT_FROM_EMAIL \
             . --no-cache
 
       - name: Tag Docker image
