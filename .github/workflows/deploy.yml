@@ -6,15 +6,14 @@ on:
       - master
 
 env:
-  DATABASE_NAME: ${{ vars.DATABASE_NAME_PRODUCTION }}
-  DATABASE_USER: ${{ vars.DATABASE_USER_PRODUCTION }}
-  DATABASE_PASSWORD: ${{ vars.DATABASE_PASSWORD_PRODUCTION }}
-  DATABASE_HOST: ${{ vars.DATABASE_HOST_PRODUCTION }}
-  DATABASE_PORT: ${{ vars.DATABASE_PORT_PRODUCTION }}
+  DATABASE_NAME: ${{ vars.DATABASE_NAME }}
+  DATABASE_USER: ${{ vars.DATABASE_USER }}
+  DATABASE_PASSWORD: ${{ vars.DATABASE_PASSWORD }}
+  DATABASE_HOST: ${{ vars.DATABASE_HOST }}
+  DATABASE_PORT: ${{ vars.DATABASE_PORT }}
   SECRET_KEY: ${{ vars.SECRET_KEY }}
   ENVIRONMENT: ${{ vars.ENVIRONMENT }}
   FIREBASE_SERVICE_ACCOUNT: ${{ vars.FIREBASE_SERVICE_ACCOUNT }}
-  WEATHER_API_KEY: ${{ vars.WEATHER_API_KEY }}
 
 jobs:
   build:
@@ -83,7 +82,6 @@ jobs:
             --build-arg SECRET_KEY=$SECRET_KEY \
             --build-arg ENVIRONMENT=$ENVIRONMENT \
             --build-arg FIREBASE_SERVICE_ACCOUNT=$FIREBASE_SERVICE_ACCOUNT \
-            --build-arg WEATHER_API_KEY=$WEATHER_API_KEY \
             . --no-cache
 
       - name: Tag Docker image
