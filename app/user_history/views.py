@@ -12,16 +12,10 @@ class UserHistoryAPIView(APIView):
     permission_classes = [IsAuthenticated]
 
     def get(self, request):
-        # picture = request.data['picture']
-        # user = request.user
-        # diseases = Disease.objects.filter(id=disease_id)
-
-        # if not diseases.exists():
         user_histories = UserHistory.objects.filter(user=request.user)
-        serializer = UserHistorySerializer(user_histories, many=True)
 
-        # return FailedResponse('Penyakit tidak ada dalam daftar', [])
-        # else:
-        #     disease = diseases.first()
-        #     serializer = DiseaseSerializer(disease)
-        return SuccessResponse('Berhasil mendapatkan rekomendasi', serializer.data)
+        if not user_histories.exists():
+            return FailedResponse('Pengguna tidak memiliki riwayat', [])
+
+        serializer = UserHistorySerializer(user_histories, many=True)
+        return SuccessResponse('Berhasil mendapatkan riwayat pengguna', serializer.data)
