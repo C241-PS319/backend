@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   staging:
-    profiles: [staging]
+    profiles: [production]
     image: eugeniusms/patera:latest
     container_name: patera
     restart: unless-stopped
