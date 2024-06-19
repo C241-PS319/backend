@@ -1,0 +1,178 @@
+[
+  {
+    "model": "recommendation.disease",
+    "pk": 1,
+    "fields": {
+      "name": "Lettuce Bacterial",
+      "cause": "Penyebab utama penyakit ini bisa jadi jenis bakteri dari genera Xanthomonas dan Pseudomonas. Di Indonesia, istilah yang sering digunakan adalah kebusukan pada tanaman (black rot). Penyebaran dapat terjadi melalui penyiraman, karena bakteri dapat menyebar melalui percikan air. Gejala awal dari bercak daun bakterial adalah bercak daun kecil (kurang dari 0,25 inci dalam diameter), yang terlihat basah karena air. Bercak ini dapat berubah cepat menjadi hitam. Hal inilah yang menjadi ciri khas dari penyakit ini.\r\n\r\nUmumnya, patogen bakteri terbawa di dalam benih tanaman. Walaupun bisa memungkinkan tersebar ketika proses pertumbuhan hingga panen.",
+      "healing": "Jika gejala bakteri seperti ini ditemukan pada tanaman selada yang masih muda, anda dapat menyiramkan tanaman tersebut dengan Bakterisida.",
+      "prevention": "Anda sebaiknya menghindari menyimpan biji dari tanaman yang terinfeksi atau dari tanaman lain yang tumbuh di sekitarnya. Anda mungkin dapat membunuh patogen yang ada di permukaan biji, bahkan pada biji yang Anda beli, dengan merendam biji dalam larutan pemutih untuk melakukan sterilisasi. \r\n\r\nCaranya adalah meletakkan sekitar satu sendok makan biji dalam sebuah wadah, seperti toples kaca, dan tambahkan satu cangkir air panas tapi tidak mendidih, serta satu sendok makan pemutih klorin. Biarkan biji direndam selama sekitar 15 menit, lalu bilas dengan air dingin hingga aroma pemutih hilang.\r\n\r\nPerlu diingat bahwa perlakuan ini hanya akan membunuh patogen yang ada di permukaan luar biji, dan bakteri berpotensi bertahan di bawah lapisan biji. Setelah biji telah dicuci bersih, sebarkan dan biarkan mengering semalaman.\r\n\r\nKetika proses pertumbuhan, disarankan untuk menjaga kondisi kebun lebih sedikit kering agar perkembangan bakteri tidak cepat, sehingga penyebaran dapat dihindari.",
+      "cost": "Biaya untuk membeli Bakterisida di toko online rata-rata sebesar 20 ribu sampai 40 ribu."
+    }
+  },
+  {
+    "model": "recommendation.disease",
+    "pk": 2,
+    "fields": {
+      "name": "Lettuce Fungal Downy Mildew",
+      "cause": "Penyakit ini disebabkan oleh jamur Bremia lactucae. Gejala yang ditimbulkan diantaranya tulang-tulang daun terjadi bercak bersudut, bewarna hijau muda pucat sampai kuning. Pada permukaan bawah daun dapat berbentuk kapang (jamur) putih. Bagian daun yang terinfeksi saling berhubungan dan berubah menjadi bercak coklat yang besar. Penyakit yang menyerang pada waktu tanaman masih kecil menyebabkan tanaman menjadi kerdil, jika tanaman yang sudah besar terinfeksi jamur Bremia lactucae, maka banyak daun yang harus dibuang.\r\n\r\nJamur ini dapat berkembang cepat ketika sedang di musim hujan, karena kelembapannya. Suhu yang disukai jamur biasanya disekitar 15 sampai 23 derajat Celcius.",
+      "healing": "Penyembuhan Downy Mildew atau Embun Bulu dapat dilakukan dengan menyiramkan tanaman yang terkontaminasi dengan fungisida. Disarankan mengikuti pendekatan terpadu dalam memakai fungisida. Jika tanaman sudah terkontaminasi cukup parah, maka tanaman tersebut perlu disingkirkan.",
+      "prevention": "Anda bisa memilih varietas bibit yang terpercaya, berkualitas, dan bebas dari infeksi. \r\nMenjaga kebersihan kebun, alat kebun, dan kendalikan gulma disekitar kebun.\r\nMenjaga kelembaban kebun agar tidak berlebihan, serta menghindari penumpukan daun karena dapat menjadi tempat berkembangnya jamur.",
+      "cost": "Harga untuk fungisida sendiri berkisar 60 ribu sampai 200 ribu, seperti merek Amistratop, Antracol, dan sebagainya."
+    }
+  },
+  {
+    "model": "recommendation.disease",
+    "pk": 3,
+    "fields": {
+      "name": "Lettuce Fungal Powdery Mildew",
+      "cause": "Penyakit embun tepung atau powdery mildew adalah penyakit yang disebabkan oleh jamur Leveillula taurica. Disebut embun tepung karena pada gejala serangannya nampak massa jamur berwarna putih di bagian bawah daun, yang terlihat seperti “serbuk tepung”. Gejala serangan penyakit powdery mildew ini biasanya dimulai dari daun bawah yang kemudian terus menyebar ke daun yang lebih muda (ke bagian atas). Gejala saat fase infeksi awal muncul bercak-bercak berwarna hijau terang sampai kuning terang yang terlihat pada bagian atas permukaan daun tua. Gejala lebih lanjut, daun yang terinfeksi meringkuk ke atas, dan terlihat jelas pertumbuhan jamur berwarna putih pada bagian bawah daun. Daun yang muncul-muncul bercak kuning tadi berkembang menjadi nekrotik (mati) dan gugur. Pada serangan yang parah, tanaman akan nampak gundul karena hampir semua daunnya gugur/rontok.\r\n\t\t\r\nTumbuhnya jamur bisa disebabkan oleh suhu dan kelembaban pada kebun. Jamur dapat menyebar lebih cepat ketika sedang di musim hujan, dan kondisi kebun yang berembun.",
+      "healing": "Jika tanaman sudah terkontaminasi dan cukup parah, anda dapat menyemprotkan fungisida yang dikhususkan untuk membasmi embun tepung. \r\n\r\nAnda juga perlu mengurangi dosis pupuk yang tinggi akan N, karena kadar tersebut dapat mendukung perkembangan jamur.",
+      "prevention": "Untuk mencegah adanya jamur, beberapa hal yang harus anda perhatikan adalah:\r\nMemilih bibit varietas yang tidak terinfeksi. \r\nMencegah dan mengendalikan penyakit embun tepung pada cabai sebenarnya dimulai dari sejak memilih lokasi tanam. Pilihlah lokasi tanam yang tak ternaungi dan mendapatkan sinar matahari langsung.\r\nSaat menanam selada, gunakan jarak tanam yang agak lebar agar sirkulasi udara lebih baik dan tidak tercipta iklim mikro yang mendukung perkembangan jamur Leveillula taurica.\r\nJika ada yang sudah terkontaminasi, anda bisa memotong daun tersebut, dan mencuci peralatan bekas memotong agar tidak menyebar ke selada lainnya.",
+      "cost": "Untuk fungisida sendiri, harga kisarannya adalah sebagai berikut:\r\nFungisida Belerang 80 WG, berkisar 70 ribu sampai 100 ribu\r\nFungisida Tembaga Hidroksida KOCIDE 54 WG, berkisar 180 ribu sampai 300 ribu."
+    }
+  },
+  {
+    "model": "recommendation.disease",
+    "pk": 4,
+    "fields": {
+      "name": "Lettuce Fungal Septoria Blight",
+      "cause": "Septoria menghasilkan bintik-bintik di bagian bawah daun. Agar jamur ini muncul, tanaman harus berada di daerah dengan kelembaban tinggi atau musim hujan. Bintik-bintik klorosis kecil berbentuk tidak beraturan muncul di daun. Seiring waktu, bintik-bintik ini menjadi nekrotik dan membentuk cincin klorosis di sekitarnya, suatu gejala perkembangan penyakit.\r\n\r\nJamur dapat bertahan hidup pada daun tua yang dibuang saat panen, pada gulma, dan sebagai spora pada benih. Penyebarannya terjadi ketika tubuh buah terbuka, melepaskan spora yang menyebar dari satu tanaman ke tanaman lain melalui percikan hujan atau hujan yang digerakkan oleh angin.",
+      "healing": "Jika ada selada yang sudah terkontaminasi, anda dapat menyemprotkan fungisida yang khususnya membasmi jamur Septoria. Disarankan penggunaan fungisida sebelum curah hujan yang tinggi, dan berangin agar jamur tidak menyebar.",
+      "prevention": "Gunakan varietas bibit yang tidak terkontaminasi, dan membelinya di tempat yang terpercaya\r\nMenjaga kelembaban pada kebun\r\nJika ada bagian yang terkontaminasi, anda bisa langsung memangkas dan membuangnya.\r\nMenjaga kebersihan kebun",
+      "cost": "Anda dapat membeli fungisida sebagai berikut:\r\nNativo® 75 WG, fungisida yang dapat membasmi jamur Septoria, di harga 23 ribu (untuk ukuran sachet, 12.5 gram) sampai 70 ribu (untuk  50 gram)\r\nScore 250 EC, di harga 60 ribu (80 mL) sampai 200 ribu (250 mL)."
+    }
+  },
+  {
+    "model": "recommendation.disease",
+    "pk": 5,
+    "fields": {
+      "name": "Tomato Spider Mites",
+      "cause": "Penyakit ini disebabkan oleh hama tetranychus evansi. Hama ini dapat ditemukan pada kedua sisi daun, tetapi lebih sering ditemukan di bagian bawah. Hama ini akan membuat daun menjadi putih kekuningan dan berbintik. Hama ini akan terus berkembang biak pada daerah dengan iklim hangat, serta didukung dengan kondisi daerah yang kering dan panas. Semakin tinggi suhu, maka semakin cepat pula hama ini berkembang biak.",
+      "healing": "Dapat menggunakan bubuk sulfur.",
+      "prevention": "Menebarkan bubuk sulfur dapat mencegah perkembangan hama ini.",
+      "cost": "Bubuk sulfur seharga 10 - 25 ribu di toko online."
+    }
+  },
+  {
+    "model": "recommendation.disease",
+    "pk": 6,
+    "fields": {
+      "name": "Tomato Target Spot",
+      "cause": "Penyakit ini disebabkan oleh jamur corynespora cassiicolla. Penyakit ini terjadi di negara-negara dengan daerah tropis dan subtropis. Infeksi target spot dapat mengurangi hasil panen secara tidak langsung karena dapat mengurangi area yang dapat digunakan tomat untuk melakukan fotosintesis. Jamur tersebut dapat menginfeksi semua bagian dari tanaman tomat yang berada di atas tanah. Gejala awal dari infeksi ini adalah munculnya bintik-bintik kecil yang lama-lama berubah menjadi berwarna coklat muda di tengah dan gelap di pinggir.",
+      "healing": "Buang beberapa tangkai pada bagian bawah tanaman untuk memberikan peredaran udara yang lebih baik.\r\nBuang dan bakar daun pada bagian bawah jika infeksi mulai terlihat.\r\nJaga lahan dari gulma.",
+      "prevention": "Jangan menanam tanaman baru di sebelah tanaman tua yang memiliki penyakit ini\r\nTanam sejauh mungkin dari tanaman pepaya.\r\nPeriksa semua bibit di persemaian dan buang bibit yang terdapat bercak pada daunnya.",
+      "cost": "Fungisida klorotalonil seharga 70 - 120 ribu di toko online.\r\nFungisida tembaga oksida seharga 20 - 40 ribu di toko online."
+    }
+  },
+  {
+    "model": "recommendation.disease",
+    "pk": 7,
+    "fields": {
+      "name": "Tomato Yellow Leaf Curl Virus",
+      "cause": "Penyakit ini menginfeksi berbagai macam tumbuhan, namun umum diketahui bahwa penyakit ini dapat mengurangi hasil panen hingga 100%. Gejala yang paling jelas adalah daun kecil yang berubah menjadi kekuningan serta daunnya menggulung ke atas menuju tengah. Meskipun produksi tomat berkurang karena penyakit ini, namun hasil buah tomat tidak terpengaruh sama sekali.",
+      "healing": "Hindari menanam tanaman baru yang dekat dengan lahan yang tanamannya terinfeksi.\r\nTutupi tanaman dengan jaring halus.\r\nBuang tanaman yang sakit karena terinfeksi.",
+      "prevention": "Menggunakan kultivar yang tahan penyakit ini adalah opsi yang paling ekonomis (apple yellow f1, ella bella, bhn-1050, brenda f1, camaro f1, dll)\r\nJangan impor tomat dari daerah yang terkena virus (florida, georgia, texas, dan mexico)",
+      "cost": "Tidak ada"
+    }
+  },
+  {
+    "model": "recommendation.disease",
+    "pk": 8,
+    "fields": {
+      "name": "Tomato Mosaic Virus",
+      "cause": "Penyakit mosaik pada tanaman tomat disebabkan oleh infeksi virus yang menyebar melalui berbagai cara, seperti serangga penghisap tanaman, kontaminasi peralatan pertanian, atau sentuhan langsung manusia yang membawa virus dari tanaman yang terinfeksi. \r\n\r\nGejala ditandai dengan munculnya pola warna kekuningan atau kecoklatan pada daun tanaman tomat. Pola ini mirip dengan mosaik atau mozaik seperti namanya. \r\n\r\nSelain itu, daun yang terinfeksi tampak kering, kaku, dan mengerut. Gejala penyakit ini dapat mempengaruhi pertumbuhan dan hasil produksi pada tanaman tomat.",
+      "healing": "Tanaman tomat yang terinfeksi harus segera dicabut bersama dengan tanah di sekitarnya, begitu juga dengan gulma yang tumbuh di sekitar area tersebut. Pengalaman para petani sayuran menunjukkan bahwa memangkas bagian yang rusak dari tanaman tomat dan mengolahnya lebih lanjut tidak efektif. Tanaman yang sakit menjadi sumber virus yang berbahaya dan dapat menyebabkan wabah penyakit tanaman yang luas.",
+      "prevention": "Beberapa pencegahan adanya virus mosaik adalah:\r\nMemastikan mendapatkan bibit yang sehat, tidak terkontaminasi dengan virus. Disarankan untuk melakukan pemanasan pada biji pada suhu 70 derajat Celcius selama 4 hari, atau pada suhu 82 derajat sampai 85 derajat Celcius selama 24 jam untuk membunuh virus.\\\r\nTanaman yang terinfeksi harus dicabut dan dibuang.\r\nLahan yang terkontaminasi tidak boleh digunakan terlebih dahulu untuk menanam varietas yang baru.",
+      "cost": "Tidak ada pengobatan kimia yang efektif untuk mengatasi virus mosaik."
+    }
+  },
+  {
+    "model": "recommendation.disease",
+    "pk": 9,
+    "fields": {
+      "name": "Spinach White Rust",
+      "cause": "Penyakit ini disebabkan oleh jamur air albugo occidentalis. Tanda apabila bayam terkena penyakit ini adalah adanya bercak kuning pada permukaan daun bagian atas serta bintik warna putih melepuh pada bagian bawah daun. Pada keadaan yang parah, bagian atas daun juga akan berwarna putih. Tanaman yang terinfeksi akan menjadi lemah dan mudah roboh. Penyakit ini juga dapat menyebabkan kerugian panen.",
+      "healing": "Menggunakan fungisida yang mengandung bacillus subtilis",
+      "prevention": "Lahan harus diperiksa setiap minggu untuk mendeteksi wabah dan memantau persebarannya.\r\nPetani harus membatasi pergerakan pekerja melalui lahan yang terinfeksi.\r\nBuang daun yang terkena penyakit ini secepatnya.",
+      "cost": "BIOBAC WP 500g fungisida bacillus subtilis seharga 240 ribu"
+    }
+  },
+  {
+    "model": "recommendation.disease",
+    "pk": 10,
+    "fields": {
+      "name": "Spinach Manganese Deficiency",
+      "cause": "Pada saat musim kemarau atau cuaca sangat panas, biasanya menyebabkan bintik-bintik kuning pada tulang daun bayam. Hal ini menunjukkan bahwa tanaman bayam tidak sehat dan kekurangan zat Mn. Penyakit ini menyebabkan pertumbuhan bayam menjadi lambat karena tepi-tepi daun akan mengering.",
+      "healing": "Penyakit ini dapat dikendalikan dengan memberikan zat kapur pada tanah sekitar tanaman bayam. Anda juga dapat menggunakan pupuk yang mengandung kandungan mangan yang cukup besar, sekitar 30 persen",
+      "prevention": "Ini bukan penyakit yang dapat menyebar, dan anda dapat memeriksa apakah bayam anda akan terkena penyakit ini dengan cara:\r\nSelalu memeriksa kadar pH pada media tanam, \r\nMenggunakan pupuk yang seimbang unsur haranya",
+      "cost": "Anda dapat membeli:\r\nKapur, harga sekitar 2 ribu, di toko online\r\nPupuk mikro mangan, sekitar 20 ribu di toko online"
+    }
+  },
+  {
+    "model": "recommendation.disease",
+    "pk": 11,
+    "fields": {
+      "name": "Tomato Bacterial Spot",
+      "cause": "Bercak bakteri disebabkan oleh empat spesies Xanthomonas dan terjadi di seluruh dunia di mana pun tomat ditanam. Bercak bakteri menyebabkan bercak pada daun dan buah, yang menyebabkan defoliasi, buah terbakar sinar matahari, dan kehilangan hasil panen. Karena keragaman patogen bercak bakteri, penyakit ini dapat terjadi pada suhu yang berbeda dan merupakan ancaman bagi produksi tomat di seluruh dunia. Perkembangan penyakit disukai oleh suhu 75 hingga 86 ℉ dan curah hujan yang tinggi. Di North Carolina, penyakit ini lebih sering terjadi pada musim dengan curah hujan tinggi dan lebih jarang terjadi pada musim kemarau.",
+      "healing": "Sirkulasi Udara\r\nSediakan banyak ruang untuk tanaman. Aliran udara yang baik akan membantu menjaga tanaman tetap kering.\r\nAir untuk Tanaman\r\nMemancang atau mengurung tanaman tomat memastikan dedaunan tidak menyentuh tanah dan terhindar dari spora.\r\nFungisida\r\nMengawasi tanaman Anda, terutama selama cuaca basah atau jika tanaman Anda menjadi stres. Jika Anda melihat tanda-tanda penyakit busuk pada satu tanaman, mencabut tanaman tersebut adalah pilihan terbaik. Fungisida yang mengandung bahan aktif Penthiopyrad atau Boscalid adalah yang paling efektif.",
+      "prevention": "Praktik kultur dan penyemprotan tembaga secara preventif membantu mengatasi bercak bakteri.\r\nPengendalian Budaya\r\nBercak bakteri umumnya terjadi pada tomat di seluruh California. Menggunakan benih bebas patogen dan transplantasi bebas penyakit, jika memungkinkan, adalah cara terbaik untuk menghindari bercak bakteri pada tomat. Menghindari irigasi sprinkler dan tumpukan sampah di dekat rumah kaca atau operasi lapangan, serta melakukan rotasi dengan tanaman bukan inang juga membantu mengendalikan penyakit.\r\nMetode yang Dapat Diterima Secara Organik\r\nPengendalian kultur dan beberapa formulasi tembaga dapat diterima untuk digunakan pada produk bersertifikat organik.",
+      "cost": "Fungisida dijual seharga 70 - 130 ribu di toko online"
+    }
+  },
+  {
+    "model": "recommendation.disease",
+    "pk": 12,
+    "fields": {
+      "name": "Tomato Early Blight",
+      "cause": "Penyakit busuk daun tomat terutama disebabkan oleh jamur Alternaria linariae (=A. tomatophila; sebelumnya dikenal sebagai A. solani), meskipun spesies Alternaria lainnya dapat diisolasi dari lesi.",
+      "healing": "Setelah tanaman terinfeksi penyakit busuk daun tomat, fungisida dapat disemprotkan pada tanaman.Hal ini dapat membantu mengurangi kerusakan pada tanaman, tetapi seringkali hal ini hanya akan mengurangi, bukan menghilangkan masalah.Cara terbaik untuk mengatasi bercak daun pada tomat adalah dengan memastikannya tidak terjadi sejak awal.Untuk penanaman berikutnya, pastikan jarak tanaman tomat cukup jauh. Selain itu, jangan menyirami tanaman dari atas kepala; gunakan irigasi tetes sebagai gantinya.",
+      "prevention": "- Buatlah teralis tomat untuk meningkatkan aliran udara dan mencegah percikan spora dari tanah.\r\n- Gunakan mulsa untuk mencegah spora memercik ke tanaman.\r\n- Pangkas daun paling bawah saat tanaman tumbuh. daun-daun ini biasanya lebih banyak terinfeksi daripada bagian atas tanaman.",
+      "cost": "Fungisida dijual seharga 70 - 130 ribu di toko online"
+    }
+  },
+  {
+    "model": "recommendation.disease",
+    "pk": 13,
+    "fields": {
+      "name": "Tomato Late Blight",
+      "cause": "Penyakit busuk daun tomat disebabkan oleh patogen oomycete Phytophthora infestans (P. infestans). Patogen ini terkenal karena menyebabkan bencana kelaparan kentang di Irlandia pada tahun 1840-an, yang menewaskan lebih dari satu juta orang, dan menyebabkan jutaan orang lainnya meninggalkan negara itu.",
+      "healing": "Setelah tanaman terinfeksi di kebun rumah, tidak banyak yang dapat dilakukan untuk melindunginya selain semprotan fungisida mingguan. Lakukan aplikasi semprotan mingguan untuk melindungi tanaman dari infeksi lebih lanjut. Tanaman yang terinfeksi parah dapat dimusnahkan dengan cara dikubur atau dibakar. Hindari pengomposan tanaman yang sakit.\r\nGantilah tomat dengan sayuran yang tidak terkait secara botani dengan tomat atau kentang. Jangan menanami lahan dengan kelompok sayuran ini selama dua hingga tiga tahun. Hindari memanen buah tomat yang terlihat memiliki lesi penyakit.",
+      "prevention": "Di taman rumah, jika terdapat penyakit busuk daun pada tanaman, rekomendasinya adalah mencabut tanaman tersebut dan membuangnya dengan benar. Hal ini akan mengurangi risiko penularan penyakit ke tanaman sehat yang rentan di sekitar lingkungan tersebut. Jika tanaman yang terinfeksi penyakit busuk daun dibuang atau dikomposkan, tanaman tersebut dapat terus menghasilkan spora, yang dapat terbawa angin dan menyebar ke tanaman lain yang rentan di daerah tersebut. Untuk alasan ini, JANGAN membuat kompos dari tanaman yang sakit.\r\n\r\nBuanglah tanaman yang sakit dengan hati-hati dan masukkan ke dalam kantong plastik. Membungkus bahan yang sakit dengan plastik dua kali lipat akan membantu mencegah penyebaran spora. Jemur kantong-kantong tersebut di bawah sinar matahari untuk memanaskan bagian dalam yang terinfeksi hingga cukup untuk membunuh tanaman.",
+      "cost": "Fungisida dijual seharga 70 - 130 ribu di toko online"
+    }
+  },
+  {
+    "model": "recommendation.disease",
+    "pk": 14,
+    "fields": {
+      "name": "Tomato Leaf Mold",
+      "cause": "Jamur daun tomat disebabkan oleh patogen jamur yang disebut Passalora fulva (syn. Cladosporium fulvum). Jamur ini merupakan jamur ascomycete yang hidup pada daun tomat yang masih hidup. Jamur ini menghasilkan konidia yang menginfeksi permukaan bawah daun. Setelah mendarat di daun, jamur mendarat dan memasuki stomata tanaman yang digunakan untuk pertukaran gas. Stomata menjadi tersumbat dan tanaman tomat tidak dapat bernapas dengan baik, mengakibatkan layu, defoliasi, dan infeksi.",
+      "healing": "Setelah tanaman terinfeksi, dapat dilakukan melalui sanitasi dan aplikasi fungisida. Buang dan buang tanaman yang terinfeksi berat. Infeksi ringan dapat diperlambat dengan membuang daun yang sakit saat muncul. Sanitasi sangat penting untuk mengurangi tekanan penyakit di kebun Anda setiap tahunnya. Musim gugur ini, singkirkan semua sisa tanaman yang tersisa di kebun sebelum digarap.",
+      "prevention": "Penyakit busuk daun pada tomat terjadi selama periode hangat dan lembab di pertengahan musim panas dan dapat menyebar dengan cepat. Untuk mencegahnya, jaga agar daun tomat tetap kering dengan mengalirkan air ke pangkal tanaman melalui selang air, bukan alat penyiram di atas kepala, karena air di permukaan daun mendorong perkecambahan spora jamur dan infeksi. \r\n\r\nSelain itu, gunakan jarak tanam yang tepat agar daun cepat kering setelah hujan. Mulsa juga penting untuk mencegah percikan air hujan dari tanah ke daun tomat, karena penyakit dapat melewati musim dingin pada sisa-sisa tanaman yang terinfeksi di dalam tanah.",
+      "cost": "Fungisida dijual seharga 70 - 130 ribu di toko online"
+    }
+  },
+  {
+    "model": "recommendation.disease",
+    "pk": 15,
+    "fields": {
+      "name": "Tomato Septoria Leaf Spot",
+      "cause": "Bercak daun Septoria disebabkan oleh jamur Septoria lycopersici, yang menyerang tomat pada berbagai tahap perkembangan, namun gejala biasanya pertama kali muncul pada daun dan batang yang lebih tua saat tanaman mulai berbuah. Gejala awal terlihat sebagai bintik-bintik kecil, basah kuyup, dan melingkar di bagian bawah daun yang lebih tua. Bagian tengah bintik-bintik ini berubah menjadi abu-abu atau cokelat dengan tepi berwarna cokelat tua. Bintik-bintik tersebut dapat membesar dan menyatu seiring waktu. Ciri khas penyakit ini adalah adanya pycnidia, struktur seperti jerawat berwarna cokelat tua, di tengah bercak cokelat. Daun yang terkena akan menguning, mengerut, dan rontok, dimulai dari daun tertua dan menyebar ke atas. Defoliasi dini ini dapat menyebabkan buah terbakar sinar matahari, mengakibatkan kerugian yang signifikan.",
+      "healing": "Ada beberapa pilihan untuk mengobati bercak daun Septoria ketika muncul;\r\nMembuang Daun yang Terinfeksi Buang daun yang terinfeksi dengan segera. Pastikan untuk mencuci tangan dan alat pemotong secara menyeluruh sebelum Anda memangkas tanaman tomat yang tidak terinfeksi.\r\nPertimbangkan Pilihan Fungisida Organik Fungisida yang mengandung tembaga atau kalium bikarbonat akan membantu mencegah penyebaran penyakit. Mulailah menyemprot segera setelah gejala pertama muncul dan ikuti petunjuk label untuk penanganan lanjutan.\r\nPertimbangkan Fungisida Kimia Meskipun pilihan bahan kimia tidak ideal, mereka mungkin satu-satunya pilihan untuk mengendalikan infeksi tingkat lanjut. Salah satu yang paling tidak beracun dan paling efektif adalah chlorothalonil (dijual dengan nama Fungonil dan Daconil).",
+      "prevention": "Jika ditemukan tanaman yang terinfeksi, lakukan pemusnahan bibit sebelum dipindahkan ke lahan. Akan sangat membantu untuk mempraktikkan rotasi tanaman dengan tanaman non-Solan, jika memungkinkan. Karena air sangat penting bagi penyebaran dan perkembangan penyakit ini, akan sangat membantu untuk menghindari penyiraman di atas kepala atau menyiram di pagi hari agar daun mengering lebih cepat dibandingkan dengan penyiraman di malam hari. Selain itu, akan sangat membantu untuk menghindari bekerja dengan tanaman ketika mereka basah.",
+      "cost": "Fungonil dan Daconil dijual seharga 70 - 150 ribu di toko online"
+    }
+  },
+  {
+    "model": "recommendation.disease",
+    "pk": 16,
+    "fields": {
+      "name": "Spinach Curling Virus",
+      "cause": "Penyakit Spinach Blight ditandai dengan munculnya permukaan daun yang menguning serta daun yang menyempit dan menggulung. Penyakit Spinach Blight disebabkan karena virus Mozaik Cucumber.\r\n\r\nJika bayam terinfeksi penyakit ini, sebaiknya cabut dan hancurkan tanaman untuk menghindari penyebaran. Penyakit ini dapat dicegah dengan melakukan pembersihan gulma disekitar tanaman bayam dengan rutin.",
+      "healing": "Tidak ada pengobatan yang efektif jika tanaman terkena virus mosaik. Jika Anda mencurigai adanya virus mosaik, singkirkan tanaman yang terkontaminasi, kemudian melakukan peremajaan tanaman kembali Melakukan penggiliran tanaman (rotas) dengan tanaman yang tidak sefamili dengan bayam sebagai tindakan pencegahan. Selain itu, lahan harus dibersihkan dari tanaman-tanaman yang mungkin sebagai inang bagi penyakit ini.",
+      "prevention": "Anda bisa mencegah penyebaran virus mosaik ini dengan cara:\r\nVirus mosaik umumnya disebarkan oleh serangga penghisap getah seperti kutu daun. Gunakan larutan minyak mimba murni dengan sabun dan air dan semprotkan tanaman untuk mengatasi hama ini.\r\nPilih varietas bayam yang tahan virus\r\nMembuang tanaman bayam yang terkontaminasi, dan membersihkan alat pemotongnya.",
+      "cost": "Tidak ada pengobatan kimia yang efektif untuk mengatasi virus mosaik."
+    }
+  }
+]
