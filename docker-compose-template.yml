@@ -1,7 +1,7 @@
 version: '3.8'
 
 services:
-  staging:
+  production:
     profiles: [production]
     image: eugeniusms/patera:latest
     container_name: patera
