@@ -8,7 +8,7 @@ urlpatterns = [
 
     # API urls
     path("v1/auth/", include('app.authentication.urls')),
-    # path("v1/recommendation/", include('app.recommendation.urls')),
-    # path("v1/user-history/", include('app.user_history.urls')),
+    path("v1/recommendation/", include('app.recommendation.urls')),
+    path("v1/user-history/", include('app.user_history.urls')),
     # path("v1/user-report", include('app.user_report.urls')),
 ]
