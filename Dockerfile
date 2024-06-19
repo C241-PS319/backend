@@ -35,8 +35,6 @@ COPY . /docker-app/
 
 # Expose port 8000 to the outside world
 EXPOSE 8000
-EXPOSE 443
-EXPOSE 2525
 
 # Collect static for better visualization
 RUN python manage.py collectstatic
@@ -45,4 +43,4 @@ RUN python manage.py collectstatic
 RUN python manage.py migrate
 
 # Jalankan Gunicorn
-CMD ["gunicorn", "app.patera.wsgi", "--bind", "0.0.0.0:8000", "--bind", "0.0.0.0:443", "--certfile=/home/node/app/cert/server.cert", "--keyfile=/home/node/app/cert/server.key"]
+CMD ["gunicorn", "app.patera.wsgi", "--bind", "0.0.0.0:8000"]
